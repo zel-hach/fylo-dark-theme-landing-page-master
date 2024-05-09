@@ -1,0 +1,176 @@
+/* @tailwind base;
+
+@tailwind components;
+
+@tailwind utilities; */
+
+.navBar{
+    /* position: fixed; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.navBar .ulNavBar{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hMain{
+    width: 500px;
+    text-align: center;
+}
+.pMain{
+    width: 500px;
+    text-align: center;  
+}
+.mainButton{
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: aqua;
+    border: none;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+}
+.cardT{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardT p{
+    text-align: center;
+    width: 400px;
+}
+.card22{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.cardImage{
+    display: flex;
+    justify-content: center;
+}
+.cardDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card23{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+   
+    
+}
+
+.divQuotes{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+
+}
+.divIQuotes{
+    position: relative;
+}
+.lastCard{
+    background-color: hsl(216, 53%, 9%);
+    margin: -8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+.LastCard1{
+    display: flex;
+    justify-content: space-between;
+}
+.LastCard11{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:5px;
+}
+.LastCard11 p{
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 4px;
+}
+.LastCard2 ul{
+    list-style-type: none;
+} 
+.LastCard3 ul{
+    list-style-type: none;
+}
+.LastCard4 ul{
+    list-style-type: none;
+}
+.card23{
+    display: flex;
+    justify-content: space-around;
+} 
+.card30{
+    width: 400px;
+    background-color:  hsl(219, 30%, 18%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.DivHelp{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.centerHelp{
+    background-color: hsl(219, 30%, 18%);
+    width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.centerHelp p{
+    text-align: center;
+}
+.inputDiv{
+    display: flex;
+    gap:20px;
+}
+.centerHelp .inputDiv input{
+   height: 40px;
+   width: 400px;
+   border-radius:30px;
+   border: none;
+}
+.centerHelp .inputDiv button{
+    border-radius: 30px;
+    padding: 10px;
+    background-color: aqua;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profilep1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.profilep2{
+    display: flex;
+    flex-direction: column;
+}
