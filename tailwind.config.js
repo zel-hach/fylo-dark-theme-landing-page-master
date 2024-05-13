@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customColor: 'hsl(218, 28%, 13%)',
+      },
+    },
   },
   plugins: [
     require('tailwindcss'),

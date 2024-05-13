@@ -4,16 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="./main.css" rel="stylesheet">
-  <!-- <link href=”./output.css” rel=”stylesheet”>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /> -->
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
   <style>
     .attribution {
       font-size: 11px;
@@ -23,122 +18,115 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-
-    .body {
-      color: white;
-      background-color: hsl(218, 28%, 13%);
-      width: 100%;
-      height: 100%;
-      margin:auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
   </style>
 </head>
 
-<body class="body">
-  <div class="container">
-    <nav class="navBar">
+<body class=" w-full bg-gray-900 text-white">
+  <div class="w-full p-10">
+    <nav class="flex justify-around">
       <img src="./images/logo.svg" />
-      <ul class="ulNavBar">
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
+      <ul class="flex gap-10">
+        <li class="text-xl p-2 rounded ">Features</li>
+        <li class="text-xl p-2 rounded ">Team</li>
+        <li class="text-xl p-2 rounded ">Sign In</li>
       </ul>
     </nav>
-    <div class="main">
-      <img src="./images/illustration-intro.png" width="300px" height="300px" />
-      <h1 class="hMain">
-        All your files in one secure location, accessible anywhere.
-      </h1>
-      <p class="pMain">
-        Fylo stores all your most important files in one secure location.
-        Access them wherever
-        you need, share and collaborate with friends family, and co-workers.
-      </p>
-      <button class="mainButton">
-        Get Started
-      </button>
-    </div>
-    <div class="cards">
-      <div class="card1 cardT">
-        <img src="./images/icon-access-anywhere.svg" />
-        <h2>
-          Access your files, anywhere
-        </h2>
-        <p>
-          The ability to use a smartphone, tablet, or computer to access your account means your
-          files follow you everywhere.
-        </p>
+    <div class="w-full flex flex-col justify-between items-center">
+      <div class="sm:flex flex-col justify-center items-center gap-10">
+        <div class="flex justify-center">
+          <img src="./images/illustration-intro.png" class="w-60 h-60" />
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-3xl">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="text-center w-1/2">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever
+            you need, share and collaborate with friends family, and co-workers.
+          </p>
+          <button>
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+
+        <div class="flex flex-col justify-center items-center">
+          <img src="./images/icon-access-anywhere.svg" />
+          <h2 class="text-2xl">
+            Access your files, anywhere
+          </h2>
+          <p class="text-center w-1/2">
+            The ability to use a smartphone, tablet, or computer to access your account means your
+            files follow you everywhere.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img src="./images/icon-collaboration.svg" />
+          <h1 class="text-2xl">
+            Real-time collaboration
+          </h1>
+          <p class="text-center w-1/2">
+            Securely share files and folders with friends, family and colleagues for live collaboration.
+            No email attachments required.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img src="./images/icon-security.svg" />
+          <h2 class="text-2xl">
+            Security you can trust
+          </h2>
+          <p class="text-center w-1/2">
+            2-factor authentication and user-controlled encryption are just a couple of the security
+            features we allow to help secure your files.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img src="./images/icon-any-file.svg" />
+          <h2 class="text-2xl">
+            Store any type of file
+          </h2>
+          <p class="text-center w-1/2">
+            Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+            file types to be securely stored and shared.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-center items-center">
+        <div class="">
+          <img src="./images/illustration-stay-productive.png" />
+        </div>
+        <div>
+          <h1 class="text-3xl w-1/3">
+            Stay productive, wherever you are
+          </h1>
+          <p class="w-1/2">
+            Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+            storage needs.
+          </p>
+          <p class="w-1/2">
+            Securely share files and folders with friends, family and colleagues for live collaboration. No email
+            attachments required.
+          </p>
+          <a class="text-purple-800 decoration-solid">
+            See how Fylo works
+          </a>
+        </div>
       </div>
 
-      <div class="card2 cardT">
-        <img src="./images/icon-security.svg" />
-        <h2>
-          Security you can trust
-        </h2>
-        <p>
-          2-factor authentication and user-controlled encryption are just a couple of the security
-          features we allow to help secure your files.
-        </p>
-      </div>
-      <div class="card3 cardT">
-        <img src="./images/icon-collaboration.svg" />
-        <h1>
-          Real-time collaboration
-        </h1>
-        <p>
-          Securely share files and folders with friends, family and colleagues for live collaboration.
-          No email attachments required.
-        </p>
-      </div>
-
-      <div class="card4 cardT">
-        <img src="./images/icon-any-file.svg" />
-        <h2>
-          Store any type of file
-        </h2>
-        <p>
-          Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-          file types to be securely stored and shared.
-        </p>
-      </div>
-    </div>
-    <div class="card22">
-      <div class="cardImage">
-        <img src="./images/illustration-stay-productive.png" width="300px" height="300px"/>
-      </div>
-      <div class="cardDiv">
-        <h1>
-          Stay productive, wherever you are
-        </h1>
-        <p>
-          Never let location be an issue when accessing your files. Fylo has you covered for all of your file
-          storage needs.
-        </p>
-        <p>
-          Securely share files and folders with friends, family and colleagues for live collaboration. No email
-          attachments required.
-        </p>
-        <a>
-          See how Fylo works
-        </a>
-      </div>
-    </div>
-    <div class="divQuotes">
       <!-- <div class="divIQuotes">
-        <img src="./images/bg-quotes.png" class="quotes">
-      </div> -->
-      <div class="card23">
-        <div class="card31 card30">
-          <p>
+          <img src="./images/bg-quotes.png" class="quotes">
+        </div> -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 p-20 gap-10 lg:grid-cols-3 justify-center items-center ">
+        <div class="flex flex-col bg-gray-800 p-10 rounded justify-center">
+          <p class=" w-3/4">
             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.
           </p>
-          <div class="profilep1">
-            <img src="./images/profile-1.jpg" class="profile" />
-            <div class="profilep2">
+          <div class="flex gap-5">
+            <img src="./images/profile-1.jpg" class="w-10 h-10 rounded-full" />
+            <div class="flex flex-col">
               <span>
                 Satish Patel
               </span>
@@ -148,14 +136,14 @@
             </div>
           </div>
         </div>
-        <div class="card32 card30">
-          <p>
+        <div class="flex flex-col bg-gray-800 p-10 rounded ">
+          <p class=" w-3/4">
             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.
           </p>
-          <div class="profilep1">
-            <img src="./images/profile-2.jpg" class="profile" />
-            <div class="profilep2">
+          <div class="flex gap-5">
+            <img src="./images/profile-2.jpg" class="w-10 h-10 rounded-full" />
+            <div class="flex flex-col">
               <span>
                 Bruce McKenzie
               </span>
@@ -165,14 +153,14 @@
             </div>
           </div>
         </div>
-        <div class="card33 card30">
-          <p>
+        <div class="flex flex-col bg-gray-800 p-10 rounded">
+          <p class=" w-3/4">
             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.
           </p>
-          <div class="profilep1">
-            <img src="./images/profile-3.jpg" class="profile" />
-            <div class="profilep2">
+          <div class="flex gap-5">
+            <img src="./images/profile-3.jpg" class="w-10 h-10 rounded-full" />
+            <div class="flex flex-col">
               <span>
                 Iva Boyd
               </span>
@@ -183,64 +171,62 @@
           </div>
         </div>
       </div>
-    </div>
-      <div class="DivHelp">
-        <div class="centerHelp">
-          <h1>
-            Get early access today
-          </h1>
-          <p>
-            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-            questions, our support team would be happy to help you.
-          </p>
-          <div class="inputDiv">
-            <input type="text" />
-            <button>
-              Get Started For Free
-            </button>
-          </div>
+      <div class="flex flex-col items-center gap-4">
+        <h1>
+          Get early access today
+        </h1>
+        <p class="text-center w-1/2">
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+          questions, our support team would be happy to help you.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-9">
+          <input type="text" class="p-3 rounded-md"/>
+          <button class="bg-red-400 p-3 rounded-md">
+            Get Started For Free
+          </button>
         </div>
       </div>
-    <div class="lastCard">
-      <img src="./images/logo.svg" width="50px" height="30px">
-      <div class="LastCard1">
-        <div class="LastCard11">
-          <img src="./images/icon-location.svg" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua
-          </p>
-        </div>
-        <div class="LastCard2">
-          <ul>
-            <li>
-              <img src="./images/icon-phone.svg" />
-              <span>
-                +1-543-123-4567
-              </span>
-            </li>
-            <li>
-              <img src="./images/icon-email.svg" />
-              <span>
-                example@fylo.com
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="LastCard3">
-          <ul>
-            <li>About Us</li>
-            <li>Jobs</li>
-            <li>Press</li>
-            <li>Blog</li>
-          </ul>
-        </div>
-        <div class="LastCard4">
-          <ul>
-            <li>Contact Us</li>
-            <li>Terms</li>
-            <li>Privacy</li>
-          </ul>
+      <div class="flex flex-col justify-center items-start">
+          <img src="./images/logo.svg" class="ml-20 mb-5">
+        <div class="grid grid-cols-1 sm:grid-cols-4 justify-center p-30">
+          <div class="flex justify-center items-start gap-3">
+            <img src="./images/icon-location.svg" />
+            <p class="w-2/4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <ul class="flex flex-col gap-2">
+              <li class="flex gap-1">
+                <img src="./images/icon-phone.svg" />
+                <span>
+                  +1-543-123-4567
+                </span>
+              </li>
+              <li class="flex gap-1">
+                <img src="./images/icon-email.svg" />
+                <span>
+                  example@fylo.com
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <ul>
+              <li>About Us</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <ul>
+              <li>Contact Us</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
